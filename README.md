@@ -1,9 +1,4 @@
-# ZnakeXenzia
-![Snake Xenzia by Meghana Chevva]()
-
-This is a simple Snake game built with Unity. The game allows players to control a snake, collect food to grow longer. It features play, pause, and restart controls, and displays the score.
-
-## Table of Contents
+## Mục lục
 
 - [Features](#features)
 - [Requirements](#requirements)
@@ -14,102 +9,57 @@ This is a simple Snake game built with Unity. The game allows players to control
 - [GameSettings](#gamesettings)
 - [Contributions](#contributions)
 
-## Features
+## Tính Năng
 
-- Control the snake using arrow keys or W, A, S, D.
-- Grow the snake by eating food.
-- Avoid/move through walls.
-- Display the current score.
-- Play, pause, and restart controls via buttons and the spacebar.
+Điều khiển rắn bằng phím Mũi tên hoặc W, A, S, D
 
-## Requirements
+Rắn dài ra khi ăn thức ăn
 
-- Unity Hub
-- Unity Editor 2022.3.23f1
+Tùy chọn cho phép đi xuyên tường
 
-## Installation
+Hiển thị điểm số theo thời gian thực
 
-### Option 1: Clone Repository
+Nút Chơi, Tạm dừng, Khởi động lại (cả nút bấm và phím cách)
 
-1. **Clone the repository:**
+Có thể điều chỉnh các thông số trò chơi
 
-    ```bash
-    git clone https://github.com/meggitt/ZnakeXenzia.git
-    cd ZnakeXenzia
-    ```
+## Yêu cầu
 
-2. **Open the project in Unity:**
+ Unity Hub
+ 
+ Unity Editor 2022.3.23f1
 
-    - Launch Unity Hub.
-    - Click on `Add` and navigate to the cloned project folder.
-    - Open the project.
+## Cách Dùng
 
-### Option 2: Download Zip File
+### Play, Pause và Restart
 
-1. **Download Zip File:**
+ ![Play Button](images/play_button.png): nút bắt đầu.
+ 
+ ![Pause Button](images/pause_button.png): nút tạm dừng.
+ 
+ ![Restart Button](images/restart_button.png): nút chơi lại.
 
-    - Go to the [project repository](https://github.com/meggitt/ZnakeXenzia).
-    - Click on the green `Code` button.
-    - Select `Download ZIP`.
+### Hiển Thị Điểm
 
-2. **Extract Files:**
-
-    - Extract the downloaded ZIP file to your desired location.
-
-3. **Open the project in Unity:**
-
-    - Launch Unity Hub.
-    - Click on `Add` and navigate to the extracted project folder.
-    - Open the project.
-
-## Building
-
-
-1. **Open Build Settings:**
-
-    - In Unity, go to `File > Build Settings`.
-
-2. **Select Platform:**
-
-    - Choose your target platform (e.g., PC, Mac & Linux Standalone, WebGL).
-    - For Linux builds, if unity isn't supporting to select build directory then use commands 
-        - `path/to/unity_exe -quit -batchmode -projectPath /path/tp/project -buildLinux64Player /path/to/build_output_exe`
-        - Go to build_output and run the build_output_exe file (`./game`)
-    - Click `Switch Platform`.
-
-3. **Build the Project:**
-
-    - Click `Build`.
-    - Choose a location to save the build files on your local PC.
-    - Wait for the build process to complete.
-
-## Usage
-
-### Play, Pause, and Restart Buttons
-
-- ![Play Button](images/play_button.png): Starts or resumes the game.
-- ![Pause Button](images/pause_button.png): Pauses the game.
-- ![Restart Button](images/restart_button.png): Restarts the game from the beginning.
-
-### Score Display
-
-- The score is displayed at the bottom of the game screen.
+Điểm được hiển thị ở cuối trang.
 
 ![Score](images/score.png)
 
-## Controls
+## Điều khiển
 
-- **Arrow Keys / W, A, S, D**: Move the snake.
-- **Spacebar**: Toggle between play and pause.
-- **Mouse**: Click on Play, Pause, and Restart buttons.
+ **Phím mũi tên / W, A, S, D**: điều khiển con rắn.
+ 
+ **Phím cách**: chuyển từ đang chơi thành dừng game và ngược lại.
+ 
+ **Chuột**: Click vào các nút Play, Pause và Restart.
 
-## GameSettings
+## Cài dặt
 ![Game Settings](images/gamesettings.png)
-- **Speed**: Initial value is 20.
-- **Speed Multiplier**: Initially increases the speed by 1f.
-- **InitialSize**: Initial size is 4.
-- **Move Through Walls**: If checked allows snake to move through walls, if unchecked game will reset everytime snake hits/moves through walls.
 
-## Contributions
-
-Contributions are welcome! Please create an issue or submit a pull request with your changes.
+ **Tốc độ**: giá trị ban đầu 20.
+  
+ **Hệ số nhân tốc độ**: cơ bản 1f.
+ 
+ **Kích thước**: 4.
+  
+ **Di chuyển xuyên tường**: nếu rắn chạm tường thì rắn được dịch chuyển sang tường đối diện.
