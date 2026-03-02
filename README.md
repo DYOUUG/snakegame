@@ -1,5 +1,5 @@
 🐍 HƯỚNG DẪN LÀM GAME SNAKE (RẮN SĂN MỒI) TRONG UNITY 2D
-1️⃣ Tổng quan Scene 
+##1️⃣ Tổng quan Scene 
 Trong Hierarchy đang có:
 •	Main Camera
 •	GridArea (khu vực chơi)
@@ -9,17 +9,17 @@ Trong Hierarchy đang có:
 •	Canvas (UI: điểm số, nút)
 •	GameController
 •	Grid
-2️⃣ Cài đặt Camera (Main Camera)
+##2️⃣ Cài đặt Camera (Main Camera)
 Chọn Main Camera:
 •	Projection: Orthographic
 •	Size: chỉnh sao cho vừa khung tường
 •	Position: (0, 0, -10)
  
-3️⃣ Tạo Grid (lưới di chuyển)
+##3️⃣ Tạo Grid (lưới di chuyển)
 int x = Mathf.RoundToInt(transform.position.x) + direction.x;
 int y = Mathf.RoundToInt(transform.position.y) + direction.y;
 transform.position = new Vector2(x, y);
-4️⃣ Tạo Snake (rắn)
+##4️⃣ Tạo Snake (rắn)
 📦 Cấu trúc
 Snake
  ├── Head
@@ -189,7 +189,7 @@ public class Snake : MonoBehaviour
 }
   
 
-5️⃣ Tạo Food (Táo)
+##5️⃣ Tạo Food (Táo)
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
@@ -243,7 +243,7 @@ public class Food : MonoBehaviour
     }
 }
   
-6️⃣ Wall (Dịch chuyển sang tường đối diện)
+##6️⃣ Wall (Dịch chuyển sang tường đối diện)
 •	Tường bao quanh Grid
 •	Gắn BoxCollider2D
 •	Tag: Wall
@@ -259,7 +259,7 @@ else if (other.gameObject.CompareTag("Wall"))
     }
 }
   
-7️⃣ Cắn thân là thua
+##7️⃣ Cắn thân là thua
 private void OnTriggerEnter2D(Collider2D other)
 {
     if (other.gameObject.CompareTag("Food"))
@@ -282,7 +282,7 @@ private void OnTriggerEnter2D(Collider2D other)
         }
     }
 }
-8️⃣ Hoàn thiện Game
+##8️⃣ Hoàn thiện Game
 ✔ Rắn di chuyển theo ô
 ✔ Ăn táo → dài ra
 ✔ Đụng tường → thua
