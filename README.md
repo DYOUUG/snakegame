@@ -1,5 +1,5 @@
 # ZnakeXenzia
-![Snake Xenzia by Meghana Chevva](images/ZnakeXenzia.gif)
+![Snake Xenzia by Meghana Chevva]()
 
 This is a simple Snake game built with Unity. The game allows players to control a snake, collect food to grow longer. It features play, pause, and restart controls, and displays the score.
 
